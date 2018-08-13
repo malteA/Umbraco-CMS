@@ -286,6 +286,8 @@ angular.module("umbraco")
                                 $scope.linkPickerOverlay = null;
                             }
                         };
+                        //trigger change detection workaround
+                        $scope.$digest();
                     });
 
                     //Create the insert media plugin
@@ -306,7 +308,8 @@ angular.module("umbraco")
                                 $scope.mediaPickerOverlay = null;
                             }
                         };
-
+                        //trigger change detection workaround
+                        $scope.$digest();
                     });
                     
                     //Create the embedded plugin
@@ -321,7 +324,8 @@ angular.module("umbraco")
                               $scope.embedOverlay = null;
                           }
                       };
-
+                        //trigger change detection workaround
+                        $scope.$digest();
                     });
 
 
@@ -339,7 +343,8 @@ angular.module("umbraco")
                                 $scope.macroPickerOverlay = null;
                             }
                         };
-
+                        //trigger change detection workaround
+                        $scope.$digest();
                     });
                 };
                 
